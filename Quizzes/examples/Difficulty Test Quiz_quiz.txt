@@ -1,0 +1,152 @@
+Difficulty Test Quiz
+testing
+6
+difficulty
+12
+QSingleChoice
+Easy: What is my favorite subject?
+1
+1.000000
+5
+CAO
+MLO
+PA2
+DBS
+PS1
+AChoices
+0
+0
+1
+0
+0
+QOrdering
+Medium: Order alphabetically
+5
+2.000000
+6
+F
+B
+C
+E
+D
+A
+AOrder
+5
+1
+2
+4
+3
+0
+QNumeric
+Hard: Number divisible by 7
+10
+3.000000
+AResidueClass
+7
+QText
+Easy: Vagner or Vogel? (both are correct ofcourse)
+1
+1.000000
+AText
+3
+Vagner
+Vogel
+both
+QMultipleChoice
+Easy: Everything is correct, or is it?
+1
+1.000000
+4
+8 is a prime number
+3 is greater than 5
+13 + 12 = 666
+PA2 is easy
+AChoices
+0
+0
+0
+0
+QOrdering
+Easy: Order numbers ascending
+1
+1.000000
+5
+666
+420
+69
+1000000
+1
+AOrder
+4
+2
+1
+0
+3
+QOrdering
+Easy: Order numbers  descending
+1
+1.000000
+5
+12
+88
+120
+777
+5612340124
+AOrder
+4
+3
+2
+1
+0
+QNumeric
+Easy: How many points do you need to get a B?
+1
+1.000000
+AInterval
+80.000000
+90.000000
+1
+0
+QMultipleChoice
+Hard: Choose all the prime numbers
+10
+3.000000
+5
+97
+43
+2
+15
+19
+AChoices
+1
+1
+1
+0
+1
+QText
+Hard: All that glitters is not ____.
+10
+3.000000
+AText
+2
+gold
+Gold
+QSingleChoice
+Medium: This semestral project is amazing
+5
+2.000000
+2
+True
+False
+AChoices
+1
+0
+QNumeric
+Medium: How many points do you need to get an A?
+5
+2.000000
+AInterval
+90.000000
+666.000000
+1
+1

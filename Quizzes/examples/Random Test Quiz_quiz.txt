@@ -1,0 +1,72 @@
+Random Test Quiz
+testing
+5
+random
+5
+QSingleChoice
+Choose the highest number
+2
+1.000000
+5
+7321
+321
+1234534331412
+8634242
+21312445
+AChoices
+0
+0
+1
+0
+0
+QMultipleChoice
+Every odd option is correct
+3
+1.000000
+7
+One
+Two
+Three
+Four
+Five
+Six
+Seven
+AChoices
+1
+0
+1
+0
+1
+0
+1
+QNumeric
+Number between 1 and 10
+1
+1.000000
+AInterval
+1.000000
+10.000000
+1
+1
+QText
+Is progtest great?
+1
+1.000000
+AText
+2
+yes
+Yes
+QOrdering
+Order by size ascending
+3
+1.000000
+4
+short
+int
+long long int
+char
+AOrder
+3
+0
+1
+2

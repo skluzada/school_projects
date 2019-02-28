@@ -1,0 +1,5 @@
+Byl vytvořen program, který obsahuje následující funkcionality:
+Uživatelské rozhraní pomocí ncurses, umožňující řešení a ohodnocení kvízů, vytváření kvízů, import a export kvízů
+6 druhů kvízových otázek - Single Choice, Multiple Choice, Numeric, Text, Order
+6 druhů odpovědí - Choices, Number, Interval, Residue Class, Text/s,  Order
+Zobrazování otázek náhodně, nebo na základě obtížnosti, kdy jsou řešiteli zobrazovány otázky po částech na základě úspěšnosti jeho předchozích odpovědí
