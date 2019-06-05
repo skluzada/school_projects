@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BI-PYT Image Editor</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Images/icon.png</normaloff>Images/icon.png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSlider" name="sliderBrightness">
+      <property name="minimum">
+       <number>-51</number>
+      </property>
+      <property name="maximum">
+       <number>51</number>
+      </property>
+      <property name="singleStep">
+       <number>15</number>
+      </property>
+      <property name="pageStep">
+       <number>1</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBothSides</enum>
+      </property>
+      <property name="tickInterval">
+       <number>51</number>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>Open Image...</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QSlider" name="sliderContrast">
+      <property name="minimum">
+       <number>-10</number>
+      </property>
+      <property name="maximum">
+       <number>10</number>
+      </property>
+      <property name="pageStep">
+       <number>1</number>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBothSides</enum>
+      </property>
+      <property name="tickInterval">
+       <number>10</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionRotate_Right"/>
+   <addaction name="actionRotate_Left"/>
+   <addaction name="separator"/>
+   <addaction name="actionMirror_Horizontal"/>
+   <addaction name="actionMirror_Vertical"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_3">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionReset"/>
+   <addaction name="actionTo_Gray"/>
+   <addaction name="actionTo_Negative"/>
+   <addaction name="actionBrightness"/>
+   <addaction name="actionContrast"/>
+   <addaction name="actionHighlight"/>
+   <addaction name="actionBlur"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_4">
+   <property name="windowTitle">
+    <string>toolBar_4</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionExit"/>
+  </widget>
+  <action name="actionSave">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/save.png</normaloff>Images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Image As...</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/exit.png</normaloff>Images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/load.png</normaloff>Images/load.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open Image...</string>
+   </property>
+  </action>
+  <action name="actionRotate_Right">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/rotate_right.png</normaloff>Images/rotate_right.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rotate Right</string>
+   </property>
+  </action>
+  <action name="actionRotate_Left">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/rotate_left.png</normaloff>Images/rotate_left.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rotate Left</string>
+   </property>
+  </action>
+  <action name="actionMirror_Vertical">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/mirror_horizontal.png</normaloff>Images/mirror_horizontal.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mirror Vertical</string>
+   </property>
+   <property name="toolTip">
+    <string>Mirror Vertical</string>
+   </property>
+  </action>
+  <action name="actionMirror_Horizontal">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/mirror_vert.png</normaloff>Images/mirror_vert.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mirror Horizontal</string>
+   </property>
+   <property name="toolTip">
+    <string>Mirror Horizontal</string>
+   </property>
+  </action>
+  <action name="actionTo_Gray">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/to_gray.png</normaloff>Images/to_gray.png</iconset>
+   </property>
+   <property name="text">
+    <string>To Gray</string>
+   </property>
+  </action>
+  <action name="actionTo_Negative">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/negative.png</normaloff>Images/negative.png</iconset>
+   </property>
+   <property name="text">
+    <string>To Negative</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe MDL2 Assets</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/reset.png</normaloff>Images/reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionBrightness">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/brightness.png</normaloff>Images/brightness.png</iconset>
+   </property>
+   <property name="text">
+    <string>Brightness</string>
+   </property>
+  </action>
+  <action name="actionHighlight">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/highlighter.png</normaloff>Images/highlighter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Highlight Edges</string>
+   </property>
+  </action>
+  <action name="actionBlur">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/blur.png</normaloff>Images/blur.png</iconset>
+   </property>
+   <property name="text">
+    <string>Blur</string>
+   </property>
+  </action>
+  <action name="actionContrast">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/contrast.png</normaloff>Images/contrast.png</iconset>
+   </property>
+   <property name="text">
+    <string>Contrast</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
