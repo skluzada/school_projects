@@ -2,6 +2,8 @@
 
 **Boolean model**: C++ implementation of Boolean model
 
+**Computer Vision**: Four simple computer vision projects in Jupyter notebook
+
 **Image Editor**: Simple Image Editor written in Python with PyQt GUI
 
 **IMDb data visualization**: IMDb data visualization and manipulation using Docker, Logstash, ElasticSearch, Kibana, Spark and HDFS
